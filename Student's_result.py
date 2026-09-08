@@ -236,15 +236,19 @@ print("      STUDENT PERFORMANCE REPORT")
 print("********************************************")
 
 print("Total Students :", len(student.marks))
-print("Overall Mean:",mean)
-print("Overall Median:",median)
-print("Standard Deviation:",std)
-print("Variance:",variance)
-print("Highest Mark:",highest)
-print("Lowest Mark:",lowest)
-print("Student Topper: Student", topper + 1)
-print("Lowest Score student:Student", lowest + 1)
+
+mean = student.overall_mean()
+median = student.overall_median()
+std = student.Standard_Deviation()
+variance = student.Variance()
+
+student.highest_marks()
+student.lowest_marks()
+
+topper = student.Topper()
+lowest = student.Lowest_Score_Student()
 
 print("\nSubject Average")
+student.Subject_Average()
 
-print("************************************************")
+print("********************************************")
